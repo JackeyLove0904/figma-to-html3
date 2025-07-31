@@ -45,7 +45,7 @@ body {
     min-height: 100vh;
     background: var(--text-primary-color);
     color: #fff;
-    padding: 30px 0 0;
+    padding: 30px 0 110px;
 }
 
 .top-header {
@@ -119,4 +119,75 @@ body {
 
 .top-header__cta-action--sign-up {
     min-width: 104px;
+}
+
+/* =============================== hero ===================================== */
+
+.hero {
+    display: flex;
+    padding-top: 76px;
+    justify-content: space-between;
+}
+
+.hero__content {
+    width: 44%;
+}
+
+.hero__heading {
+    margin-top: 60px;
+    max-width: 514px;
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 1.14; /* 114.286% */
+    letter-spacing: -1.4px;
+}
+
+.hero__desc {
+    margin-top: 22px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67; /* 166.667% */
+    color: #c9d2da;
+    max-width: 468px;
+}
+
+.hero__row {
+    display: flex;
+    margin-top: 38px;
+    gap: 38px;
+    align-items: center;
+}
+
+.hero__phone-number {
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 1.67; /* 166.667% */
+    text-decoration: none;
+}
+
+.hero__media {
+    flex: 1;
+}
+
+.hero__images {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.hero__img {
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.hero--img-lange {
+    width: 330px;
+    height: 540px;
+    z-index: 1;
+}
+
+.hero--img-small {
+    width: 210px;
+    height: 410px;
+    margin-left: -6px;
 }
