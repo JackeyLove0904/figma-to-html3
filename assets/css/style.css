@@ -251,12 +251,18 @@ body {
     max-width: 470px;
     border-radius: 10px;
     background: #fff;
+    transition: all 0.25s;
 }
 
 .service-item:hover {
     cursor: pointer;
     box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.05);
     position: relative;
+}
+
+.service-item:hover .service-item__icon {
+    color: #fff;
+    background-color: #2e80ce;
 }
 
 .service-item__icon {
@@ -269,11 +275,9 @@ body {
     justify-content: center;
     align-items: center;
     margin-right: 19px;
-}
-
-/* .service-item:hover */
-.service-item__icon--active {
-    background-color: var(--primary-color);
+    color: var(--text-primary-color);
+    transition: 0.25s;
+    box-shadow: 0 8px 16px 0 rgba(40, 155, 222, 0.15);
 }
 
 .service-item__body {
