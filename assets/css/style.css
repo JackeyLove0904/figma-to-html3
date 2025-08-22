@@ -5,6 +5,7 @@
 :root {
     --primary-color: #2e80ce;
     --text-primary-color: #10375c;
+    --desc-color: #575f66;
 }
 
 html {
@@ -38,12 +39,12 @@ body {
 .container {
     margin: 0 auto;
     max-width: calc(100% - 48px);
+    width: 1170px;
 }
 
 .heading-lv2 {
     color: var(--text-primary-color);
     font-size: 5rem;
-    text-align: center;
     font-weight: 600;
     line-height: 1.2; /* 120% */
     letter-spacing: -1px;
@@ -51,12 +52,10 @@ body {
 
 .desc {
     max-width: 468px;
-    color: #575f66;
+    color: var(--desc-color);
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.67; /* 166.667% */
-    text-align: center;
-    margin: 0 auto;
     margin-top: 18px;
 }
 
@@ -219,6 +218,15 @@ body {
     padding: 170px 0;
 }
 
+.service__heading {
+    text-align: center;
+}
+
+.service__desc {
+    text-align: center;
+    margin: 0 auto;
+}
+
 .service__row {
     display: flex;
     margin-top: 70px;
@@ -248,6 +256,7 @@ body {
 .service-item:hover {
     cursor: pointer;
     box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.05);
+    position: relative;
 }
 
 .service-item__icon {
@@ -284,4 +293,67 @@ body {
 
 .service__list--show-all {
     margin-top: 55px;
+}
+
+/* work */
+.work {
+    padding: 100px 0;
+    background-color: #f6fbff;
+}
+
+.work-list {
+    margin-top: 86px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+.work-item {
+    max-width: 338px;
+    border-radius: 4px;
+    background: #fff;
+    padding: 42px;
+    cursor: pointer;
+    border: 16px solid #eaf6ff;
+    transition: 0.25s;
+}
+
+.work-item:hover {
+    transform: translateY(-16px);
+    border-color: #2e80ce;
+}
+
+.work-item:hover .work-item__learn-more {
+    color: #2e80ce;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.work-icon--icon {
+    color: var(--text-primary-color);
+    font-size: 6.7rem;
+}
+
+.work-icon__feature {
+    color: #10375c;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38; /* 138.462% */
+    margin-top: 18px;
+}
+
+.work-item__desc {
+    color: var(--desc-color);
+    margin-top: 28px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 28px; /* 175% */
+}
+
+.work-item__learn-more {
+    color: var(--desc-color);
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 18px;
 }
