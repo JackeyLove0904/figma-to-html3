@@ -34,7 +34,7 @@ body {
     transition: 0.25s;
 }
 .btn:hover {
-    opacity: 0.9;
+    transform: scale(0.97);
 }
 
 .container {
@@ -565,7 +565,6 @@ body {
 
 .blog__read-all {
     color: #10375c;
-    font-family: Inter;
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 600;
@@ -577,6 +576,14 @@ body {
     text-underline-offset: auto;
     text-underline-position: from-font;
     margin-top: 28px;
+    display: inline-block;
+    transition: 0.25s;
+    /* khoảng cách gạch chân cách chữ của nó */
+    text-underline-offset: 5px;
+}
+
+.blog__read-all:hover {
+    transform: scale(0.97);
 }
 
 .blog__control {
@@ -596,6 +603,7 @@ body {
     border: 1px solid #e8ebee;
     cursor: pointer;
     transition: 0.25s;
+    overflow: hidden;
 }
 
 .blog-item:hover {
@@ -603,11 +611,20 @@ body {
     box-shadow: 0 18px 50px 0 rgba(0, 0, 0, 0.05);
 }
 
+.blog-item:hover .blog-item__img {
+    transform: scale(1.04);
+}
+
+.blog-item__wraper {
+    height: 172px;
+    overflow: hidden;
+}
+
 .blog-item__img {
     width: 100%;
-    height: 172px;
     border-radius: 12px 12px 0 0;
     object-fit: cover;
+    transition: 0.25s;
 }
 
 .blog-item__body {
@@ -636,4 +653,35 @@ body {
     font-size: 1.4rem;
     margin-top: 10px;
     font-weight: 400;
+}
+
+/* ===============================Appointment============================ */
+
+.appointment {
+    padding: 85px;
+}
+
+.appointment__inner {
+    background-color: #f6fbff;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.appointment__line {
+    width: 136px;
+    height: 2px;
+    background: #2e80ce;
+    margin-top: 18px;
+}
+
+.appointment__desc {
+    max-width: 617px;
+    margin-top: 18px;
+    text-align: center;
+}
+
+.appointment__btn {
+    margin-top: 38px;
 }
